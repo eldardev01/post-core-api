@@ -63,6 +63,65 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println();
 
+        //5.6.2.7
+
+        int a = 1;
+        int b = 5;
+        int sum = 0;
+
+        for (int i = a; i <= b; i++) {
+            sum = sum + i;
+        }
+
+        System.out.println(sum);
+
+        System.out.println();
+        //5.6.7.8
+
+        double salary = 100000;
+        double prem = 0;
+        boolean classA = false;
+        boolean classB = false;
+        boolean classC = false;
+
+        if (classA) {
+            prem = salary * 0.5;
+            salary = salary + prem;
+            System.out.println(salary);
+        }
+        else if (classB) {
+            prem = salary * 0.25;
+            salary = salary + prem;
+            System.out.println(salary);
+        }
+        else if (classC) {
+            System.out.println(salary);
+        }
+        else {
+            System.out.println("Error Employee not found");
+        }
+
+        System.out.println();
+
+        //5.6.2.9
+
+        int n1 = 0;
+        int n2 = 1;
+        int n3 = 0;
+        int fib = 0;
+
+        System.out.print(n1 + " ");
+        System.out.print(n2 +" ");
+        System.out.print(n2 +" ");
+
+        for ( int i = 0; i <= 9; i++) {
+            n3 = n1 + n2;
+            fib = n2+n3;
+            System.out.print(fib + " ");
+            n1 = n2;
+            n2 = n3;
+        }
     }
 }
