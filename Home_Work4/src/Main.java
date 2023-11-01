@@ -13,13 +13,13 @@ public class Main {
         System.out.println("Площадь = " + S);
         System.out.println("Периметр =" + P);
 
-        int x = 10;
-        x++;
-        System.out.println(x);
-        ++x;
-        System.out.println(x);
-        x += 5;
-        System.out.println(x);
+        int p = 10;
+        p++;
+        System.out.println(p);
+        ++p;
+        System.out.println(p);
+        p += 5;
+        System.out.println(p);
 
         int count1 = 25, count2 = 43;
         System.out.println(count1 == count2);
@@ -49,5 +49,89 @@ public class Main {
         else {
         System.out.println("Не верно");
         }
+
+        System.out.println();
+
+        //Доп. задачи
+        //1
+
+        int number = 21;
+
+        if ( number % 2 == 0)
+            System.out.println("Чётное");
+        else
+            System.out.println("Нечётное");
+
+        System.out.println();
+        //2
+
+        int n1 = 5;
+        int n2 = 10;
+
+        if (n1 > n2)
+            System.out.println("n1 больше");
+        else
+            System.out.println("n2 Больше");
+
+        //3
+        System.out.println();
+
+        int year = 2005;
+
+        if ((year % 400 == 0 || year % 100 != 0) && year % 4 == 0)
+            System.out.println("Год весокосный");
+        else
+            System.out.println("Год невесокосный");
+
+        //4
+        System.out.println();
+
+        int numberOfWeek =4;
+
+        switch (numberOfWeek) {
+            case 1 -> System.out.println("Понедельник");
+            case 2 -> System.out.println("Вторник");
+            case 3 -> System.out.println("Среда");
+            case 4 -> System.out.println("Четверг");
+            case 5 -> System.out.println("Пятница");
+            case 6 -> System.out.println("Суббота");
+            case 7 -> System.out.println("Воскресенье");
+        }
+
+        //5
+        System.out.println();
+
+        int x = -3;
+        int y = 4;
+
+        if (x < 0 && y > 0 ) {
+            System.out.println("1 Четверть");
+        }
+        else if (x > 0 && y > 0) {
+            System.out.println("2 Четверь");
+        }
+        else if (x < 0 && y < 0) {
+            System.out.println("3 Четверь");
+        }
+        else
+            System.out.println("4 четверь");
+
+        //5
+        System.out.println();
+
+        int a1 = 3;
+        int b1 = 4;
+        int c1 = 3;
+
+        if (a1==b1 && b1 == c1) {
+            System.out.println("Равносторонний");
+        }
+        else if (a1 == b1 || b1 == c1 || a1 == c1)  {
+            System.out.println("Равнобердернный");
+        }
+        else
+            System.out.println("Разносторонний");
+
+
     }
 }
