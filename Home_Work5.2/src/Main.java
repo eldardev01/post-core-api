@@ -2,10 +2,10 @@ public class Main {
     public static void main(String[] args) {
         //5.4
 
-        int [] myarray = {1,2,3,4,5};
+        int[] myarray = {1, 2, 3, 4, 5};
         int result = 0;
 
-        for ( int i = 4; i >= 0; i--) {
+        for (int i = 4; i >= 0; i--) {
             result = myarray[i];
             System.out.print(result);
         }
@@ -25,8 +25,8 @@ public class Main {
 
         char symvol = '*';
 
-        for ( int i = 0; i < 4; i++) {
-            for ( int j = 0; j < 10; j++) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 10; j++) {
                 System.out.print(symvol);
             }
             System.out.println();
@@ -37,7 +37,7 @@ public class Main {
         // 5.6 ii
 
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < i +1; j++ ) {
+            for (int j = 0; j < i + 1; j++) {
                 System.out.print(symvol);
             }
             System.out.println();
@@ -47,20 +47,21 @@ public class Main {
 
         // 5.6 iii
 
-        for ( int i = 0; i < 6; i++) {
-            // для печати пробелов
-            for ( int j = i; j < 5; j++ ) {
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < n - i; j++) {
                 System.out.print(" ");
             }
-            // для вывода
-            for ( int k = 1; k <= i; k++) {
-                System.out.print(k);
-                if (k > 1)
-                    System.out.print(k);
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
             }
 
-            // дл перехода на следующую линию
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+            }
+
             System.out.println();
+
         }
 
         System.out.println();
@@ -90,16 +91,13 @@ public class Main {
             prem = salary * 0.5;
             salary = salary + prem;
             System.out.println(salary);
-        }
-        else if (classB) {
+        } else if (classB) {
             prem = salary * 0.25;
             salary = salary + prem;
             System.out.println(salary);
-        }
-        else if (classC) {
+        } else if (classC) {
             System.out.println(salary);
-        }
-        else {
+        } else {
             System.out.println("Error Employee not found");
         }
 
@@ -113,12 +111,12 @@ public class Main {
         int fib = 0;
 
         System.out.print(n1 + " ");
-        System.out.print(n2 +" ");
-        System.out.print(n2 +" ");
+        System.out.print(n2 + " ");
+        System.out.print(n2 + " ");
 
-        for ( int i = 0; i <= 9; i++) {
+        for (int i = 0; i <= 9; i++) {
             n3 = n1 + n2;
-            fib = n2+n3;
+            fib = n2 + n3;
             System.out.print(fib + " ");
             n1 = n2;
             n2 = n3;
