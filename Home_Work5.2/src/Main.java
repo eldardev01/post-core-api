@@ -21,7 +21,7 @@ public class Main {
             System.out.println("Составное");
         }
 
-        // 5.6 i
+        // 5.6.i
 
         char symvol = '*';
 
@@ -66,7 +66,7 @@ public class Main {
 
         System.out.println();
 
-        //5.6.2.7
+        //5.7
 
         int a = 1;
         int b = 5;
@@ -79,7 +79,7 @@ public class Main {
         System.out.println(sum);
 
         System.out.println();
-        //5.6.7.8
+        //5.8
 
         double salary = 100000;
         double prem = 0;
@@ -103,7 +103,7 @@ public class Main {
 
         System.out.println();
 
-        //5.6.2.9
+        //5.9
 
         int n1 = 0;
         int n2 = 1;

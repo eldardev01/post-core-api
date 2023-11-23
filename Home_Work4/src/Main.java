@@ -42,12 +42,10 @@ public class Main {
         System.out.println(j);
 
         int t = 65, u = 80;
-        if (t > 50 && t > u)
-        {
+        if (t > 50 && t > u) {
             System.out.println("Верно");
-        }
-        else {
-        System.out.println("Не верно");
+        } else {
+            System.out.println("Не верно");
         }
 
         System.out.println();
@@ -57,7 +55,7 @@ public class Main {
 
         int number = 21;
 
-        if ( number % 2 == 0)
+        if (number % 2 == 0)
             System.out.println("Чётное");
         else
             System.out.println("Нечётное");
@@ -86,7 +84,7 @@ public class Main {
         //4
         System.out.println();
 
-        int numberOfWeek =4;
+        int numberOfWeek = 4;
 
         switch (numberOfWeek) {
             case 1 -> System.out.println("Понедельник");
@@ -104,16 +102,13 @@ public class Main {
         int x = -3;
         int y = 4;
 
-        if (x < 0 && y > 0 ) {
+        if (x < 0 && y > 0) {
             System.out.println("1 Четверть");
-        }
-        else if (x > 0 && y > 0) {
+        } else if (x > 0 && y > 0) {
             System.out.println("2 Четверь");
-        }
-        else if (x < 0 && y < 0) {
+        } else if (x < 0 && y < 0) {
             System.out.println("3 Четверь");
-        }
-        else
+        } else
             System.out.println("4 четверь");
 
         //5
@@ -123,15 +118,12 @@ public class Main {
         int b1 = 4;
         int c1 = 3;
 
-        if (a1==b1 && b1 == c1) {
+        if (a1 == b1 && b1 == c1) {
             System.out.println("Равносторонний");
-        }
-        else if (a1 == b1 || b1 == c1 || a1 == c1)  {
+        } else if (a1 == b1 || b1 == c1 || a1 == c1) {
             System.out.println("Равнобердернный");
-        }
-        else
+        } else
             System.out.println("Разносторонний");
-
-
+        
     }
 }
