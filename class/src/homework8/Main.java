@@ -2,6 +2,7 @@ package homework8;
 
 import homework8.Avarage;
 
+
 public class Main {
     public static void main(String[] args) {
         Student alica = new Student();
@@ -17,6 +18,12 @@ public class Main {
         aza.address = "Бокейхана 15";
         aza.id = 15;
         System.out.println(aza);
+
+        Student aza2 = new Student();
+        aza2.name = "Азамат";
+        aza2.surname = "Жумагулов";
+        aza2.address = "Бокейхана 15";
+        aza2.id = 15;
 
         Student kris = new Student();
         kris.name = "Кристина";
@@ -41,6 +48,22 @@ public class Main {
         System.out.println(movie1);
         System.out.println(movie2);
 
+        if (alica.equals(aza)) {
+            System.out.println("OK");;
+        }
+        else {
+            System.out.println("False");
+        }
+
+        if (aza.equals(aza2)) {
+            System.out.println("OK");
+        }
+        else {
+            System.out.println("False");
+        }
+
+        System.out.println(aza.hashCode());
+        System.out.println(aza2.hashCode());
 
     }
 }
