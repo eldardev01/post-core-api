@@ -26,8 +26,8 @@ public class Student {
         this.name = name;
     }
 
-    public int increaseYear() {
-        return this.year++;
+    public void increaseYear() {
+        this.year++;
     }
 
     public String toString() {
