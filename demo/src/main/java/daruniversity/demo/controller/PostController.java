@@ -22,7 +22,7 @@ public class PostController {
         return new ResponseEntity<String>("post-core-api is working", HttpStatus.OK);
     }
 
-    @PostMapping("/post")
+    @PostMapping
     public ResponseEntity<String> sendPost(@Valid @RequestBody PostModel postModel) {
         postService.createPost(postModel);
         return new ResponseEntity<String>("Succesfully send", HttpStatus.OK);
