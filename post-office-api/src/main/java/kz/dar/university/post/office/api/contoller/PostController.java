@@ -1,12 +1,11 @@
 package kz.dar.university.post.office.api.contoller;
 
-import kz.dar.university.post.office.api.domain.PostResponse;
+import kz.dar.university.post.office.api.domain.PostDTO;
 import kz.dar.university.post.office.api.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.ResponseCache;
 import java.util.List;
 
 @RestController
@@ -20,12 +19,12 @@ public class PostController {
     }
 
     @GetMapping
-    public List<PostResponse> getAllPost() {
+    public List<PostDTO> getAllPost() {
         return postService.getAllPosts();
     }
 
-    @GetMapping
-    public PostResponse getPostById(@PathVariable String postId) {
+    @GetMapping("/{postId}")
+    public PostDTO getPostById(@PathVariable String postId) {
         return postService.getPostById(postId);
     }
 }

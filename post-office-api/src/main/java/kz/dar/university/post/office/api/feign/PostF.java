@@ -1,6 +1,6 @@
 package kz.dar.university.post.office.api.feign;
 
-import kz.dar.university.post.office.api.domain.PostResponse;
+import kz.dar.university.post.office.api.domain.PostDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,9 +16,9 @@ public interface PostF {
     ResponseEntity<String> checkPost();
 
     @GetMapping("post/all")
-    List<PostResponse> getAllPosts();
+    List<PostDTO> getAllPosts();
 
     @GetMapping("post/{postId}")
-    public PostResponse getPostById(@PathVariable String postId);
+    public PostDTO getPostById(@PathVariable String postId);
 
 }

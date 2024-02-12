@@ -7,8 +7,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class ClientResponse {
-    String name;
-    String surname;
-    String email;
+public class PostDTO {
+    private String postId;
+    private String clientId;
+    private String postRecipientId;
+    private String postItem;
+    private String status;
 }

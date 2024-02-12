@@ -1,6 +1,6 @@
 package kz.dar.university.post.office.api.service;
 
-import kz.dar.university.post.office.api.domain.PostResponse;
+import kz.dar.university.post.office.api.domain.PostDTO;
 import kz.dar.university.post.office.api.feign.PostF;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -17,11 +17,11 @@ public class PostService {
         return  postF.checkPost();
     }
 
-    public List<PostResponse> getAllPosts() {
+    public List<PostDTO> getAllPosts() {
         return postF.getAllPosts();
     }
 
-    public PostResponse getPostById(String postId) {
+    public PostDTO getPostById(String postId) {
         return postF.getPostById(postId);
     }
 }
