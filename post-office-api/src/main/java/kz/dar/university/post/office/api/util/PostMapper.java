@@ -12,13 +12,5 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
         nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE
 )
 public interface PostMapper {
-    @Mapping(
-            target = "client",
-            source = "clientDTO"
-    )
-    @Mapping(
-            target = "receiver",
-            source = "postDTO"
-    )
-    PostDetails map(ClientDTO clientDTO, PostDTO postDTO);
+    PostDetails map(PostDTO postDTO);
 }
