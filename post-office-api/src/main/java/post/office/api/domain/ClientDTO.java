@@ -1,4 +1,4 @@
-package kz.dar.university.post.office.api.domain;
+package post.office.api.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

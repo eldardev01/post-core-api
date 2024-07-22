@@ -1,7 +1,7 @@
-package kz.dar.university.post.office.api.service;
+package post.office.api.service;
 
-import kz.dar.university.post.office.api.domain.PostDTO;
-import kz.dar.university.post.office.api.feign.PostF;
+import post.office.api.domain.PostDTO;
+import post.office.api.feign.PostF;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

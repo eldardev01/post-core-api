@@ -1,8 +1,8 @@
-package kz.dar.university.client.core.api.controller;
+package client.core.api.controller;
 
+import client.core.api.model.ClientModel;
+import client.core.api.service.ClientService;
 import jakarta.validation.Valid;
-import kz.dar.university.client.core.api.model.ClientModel;
-import kz.dar.university.client.core.api.service.ClientService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

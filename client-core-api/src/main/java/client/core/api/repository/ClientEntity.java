@@ -1,4 +1,4 @@
-package kz.dar.university.client.core.api.repository;
+package client.core.api.repository;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

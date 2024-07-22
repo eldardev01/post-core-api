@@ -1,6 +1,6 @@
-package kz.dar.university.post.office.api.feign;
+package post.office.api.feign;
 
-import kz.dar.university.post.office.api.domain.ClientDTO;
+import post.office.api.domain.ClientDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

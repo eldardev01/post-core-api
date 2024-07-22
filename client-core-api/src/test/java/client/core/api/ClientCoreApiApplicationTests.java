@@ -1,4 +1,4 @@
-package kz.dar.university.client.core.api;
+package client.core.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

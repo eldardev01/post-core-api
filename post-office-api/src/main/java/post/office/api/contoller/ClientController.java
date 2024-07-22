@@ -1,7 +1,7 @@
-package kz.dar.university.post.office.api.contoller;
+package post.office.api.contoller;
 
-import kz.dar.university.post.office.api.domain.ClientDTO;
-import kz.dar.university.post.office.api.service.ClientService;
+import post.office.api.domain.ClientDTO;
+import post.office.api.service.ClientService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

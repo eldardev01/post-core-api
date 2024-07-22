@@ -1,11 +1,11 @@
-package kz.dar.university.post.office.api.service;
+package post.office.api.service;
 
-import kz.dar.university.post.office.api.domain.ClientDTO;
-import kz.dar.university.post.office.api.domain.PostDTO;
-import kz.dar.university.post.office.api.domain.PostDetails;
-import kz.dar.university.post.office.api.feign.ClientF;
-import kz.dar.university.post.office.api.feign.PostF;
-import kz.dar.university.post.office.api.util.PostMapper;
+import post.office.api.domain.ClientDTO;
+import post.office.api.domain.PostDTO;
+import post.office.api.domain.PostDetails;
+import post.office.api.feign.ClientF;
+import post.office.api.feign.PostF;
+import post.office.api.util.PostMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

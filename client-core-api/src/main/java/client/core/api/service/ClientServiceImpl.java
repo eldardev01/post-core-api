@@ -1,6 +1,6 @@
-package kz.dar.university.client.core.api.service;
+package client.core.api.service;
 
-import kz.dar.university.client.core.api.model.ClientModel;
+import client.core.api.model.ClientModel;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package kz.dar.university.client.core.api.repository;
+package client.core.api.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

@@ -1,10 +1,9 @@
-package kz.dar.university.post.office.api.service;
+package post.office.api.service;
 
-import kz.dar.university.post.office.api.domain.ClientDTO;
-import kz.dar.university.post.office.api.feign.ClientF;
+import post.office.api.domain.ClientDTO;
+import post.office.api.feign.ClientF;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 

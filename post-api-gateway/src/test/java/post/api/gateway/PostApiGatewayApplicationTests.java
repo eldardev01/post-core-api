@@ -1,4 +1,4 @@
-package kz.dar.university.post.api.gateway;
+package post.api.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

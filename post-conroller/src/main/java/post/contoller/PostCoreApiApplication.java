@@ -1,13 +1,14 @@
-package client.core.api;
+package post.contoller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
-public class ClientCoreApiApplication {
+public class PostCoreApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClientCoreApiApplication.class, args);
+		SpringApplication.run(PostCoreApiApplication.class, args);
 	}
 
 }

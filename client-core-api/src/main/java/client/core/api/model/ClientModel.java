@@ -1,4 +1,4 @@
-package kz.dar.university.client.core.api.model;
+package client.core.api.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
