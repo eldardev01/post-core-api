@@ -1,5 +1,6 @@
 package kz.dar.university.client.core.api.controller;
 
+import jakarta.validation.Valid;
 import kz.dar.university.client.core.api.model.ClientModel;
 import kz.dar.university.client.core.api.service.ClientService;
 import lombok.AllArgsConstructor;
@@ -17,7 +18,7 @@ public class ClientController {
     private final ClientService clientService;
 
     @PostMapping
-    public ResponseEntity<String> createClient(@RequestBody ClientModel clientModel) {
+    public ResponseEntity<String> createClient(@Valid @RequestBody ClientModel clientModel) {
         clientService.createClient(clientModel);
         return new ResponseEntity<>("Succesfully create", HttpStatus.OK);
     }
@@ -32,6 +33,11 @@ public class ClientController {
         return clientService.getClientById(clientId);
     }
 
+    @GetMapping("/clientsList")
+    public List<ClientModel> getEmployeesByList( @RequestParam List<String> clientsByIds) {
+        return clientService.getClientByList(clientsByIds);
+    }
+
     @PutMapping("{clientId}")
     public ResponseEntity<String> updateClientById(@PathVariable String clientId, @RequestBody ClientModel clientModel) {
         clientService.updateClientById(clientId, clientModel);
@@ -43,4 +49,6 @@ public class ClientController {
         clientService.deleteClientById(clientId);
         return new ResponseEntity<>("Succesfully delete", HttpStatus.OK);
     }
+
+
 }

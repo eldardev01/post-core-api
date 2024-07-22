@@ -27,11 +27,10 @@ public class DetailsService implements Detail{
     }
 
     public PostDetails getPostWithDetails (String postId) {
-        List<String> clientsIds = clients;
-        List<ClientDTO> clietsIdList = clientF.getClientByList(clientsIds);
         PostDTO postDTO = postF.getPostById(postId);
+        ClientDTO client = clientF.getClientById(postDTO.getClientId());
         PostDetails details = postMapper.map(postDTO);
-        details.setClient(clietsIdList);
+        details.setClient(client);
         return details;
     }
 }

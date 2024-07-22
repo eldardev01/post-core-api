@@ -14,19 +14,22 @@ public class ClientServiceImpl implements ClientService {
 
     static {
         ClientModel clientModel1 = new ClientModel(
-                UUID.randomUUID().toString(),
+                "123",
                 "lebron@gmail.com",
                 "James",
                 "Lebron");
         ClientModel clientModel2 = new ClientModel(
-                UUID.randomUUID().toString(),
+                "1234",
                 "ivan123@gmail.com",
                 "Ivan",
                 "Petrov");
+        clientMap.put(clientModel1.getClientId(), clientModel1);
+        clientMap.put(clientModel2.getClientId(), clientModel2);
     }
 
     @Override
     public void createClient(ClientModel clientModel) {
+        clientModel.setClientId(UUID.randomUUID().toString());
         clientMap.put(UUID.randomUUID().toString(),clientModel);
     }
 
@@ -52,4 +55,14 @@ public class ClientServiceImpl implements ClientService {
     public void deleteClientById(String clientId) {
         clientMap.remove(clientId);
     }
+
+    @Override
+    public List<ClientModel> getClientByList(List<String> clientsByIds) {
+        return clientMap
+                .values()
+                .stream()
+                .filter(clientModel -> clientsByIds.contains(clientModel))
+                .toList();
+    }
+
 }

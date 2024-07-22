@@ -10,4 +10,6 @@ public interface ClientService {
     ClientModel getClientById(String clientId);
     void updateClientById(String clientId, ClientModel clientModel);
     void deleteClientById(String clientId);
+    List<ClientModel> getClientByList(List<String> clientsByIds);
+
 }

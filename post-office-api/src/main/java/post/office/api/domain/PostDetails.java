@@ -13,7 +13,7 @@ import java.util.List;
 @Builder
 public class PostDetails {
     private String postId;
-    private List<ClientDTO> client;
+    private ClientDTO client;
     private String postItem;
     private String status;
 }
